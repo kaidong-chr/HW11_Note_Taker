@@ -18,6 +18,20 @@ app.get("/notes", function(req, res) {
   res.sendFile(path.join(__dirname, "notes.html"));
 });
 
+app.get("/api/notes"), function(req, res) {
+    let notes = req.body;
+
+}
+
+app.post("/api/notes"), function(req, res) {
+    let newNotes = req.body;
+
+    
+}
+
+app.delete("/api/notes:id"), function (req, res) {
+    
+}
 
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
