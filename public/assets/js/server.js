@@ -1,5 +1,6 @@
 let express = require("express");
-var path = require("path");
+let path = require("path");
+let fs = require("fs");
 
 let app = express();
 
@@ -9,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-app.get("/", function(req, res) {
+app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
