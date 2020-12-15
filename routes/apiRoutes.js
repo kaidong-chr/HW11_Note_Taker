@@ -1,5 +1,7 @@
-// 
+// Need node.js fs module to access and interact with the file system
 const fs = require("fs");
+
+// Variable for the inputs from db.json
 let data = JSON.parse(fs.readFileSync("../db/db.json", "utf-8"));
 
 // Routing
