@@ -1,9 +1,9 @@
-let express = require("express");
-let fs = require("fs");
+const express = require("express");
+const fs = require("fs");
 
-let app = express();
+const app = express();
 
-let PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

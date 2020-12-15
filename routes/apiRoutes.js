@@ -6,13 +6,17 @@ module.exports = function(app) {
         res.json(data);
     });
 
+    // app.get("/api/notes:id", function (req, res) {
+    //     res.json(data);
+    // });
+
     app.post("/api/notes", function(req, res) {
-        let newNotes = req.body;
+        let notes = req.body;
 
         
     });
 
-    app.delete("/api/notes:id", function (req, res) {
+    // app.delete("/api/notes:id", function (req, res) {
 
-    });
+    // });
 };
