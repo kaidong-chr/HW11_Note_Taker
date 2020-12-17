@@ -17,18 +17,18 @@
 
   ### Demo
 ![Image](./assets/images/Note_Taker.gif "Profile Generator Demo")<br />
- [Note Taker Live Link](heroku_link_here/)
+ [Note Taker Live Link](https://intense-bayou-41879.herokuapp.com/)
 
 ![Image](https://img.shields.io/badge/Languages-JavaScript-yellow)
 
   ### Implementation
-  Utilize express npm package and fs module.
+  Utilized express npm package and fs module.
 
   ### Installation
   npm install of express npm package is required.
 
   ### Usage
-  Install npm dependencies, then run <i>server.js</i> in the terminal, then visit the localhost:port for the local version of the site. Otherwise visit the [Note Taker Live Link](heroku_link_here/).
+  Install npm dependencies, then run <i>server.js</i> in the terminal, then visit the localhost:port for the local version of the site. Otherwise visit the [Note Taker Live Link](https://intense-bayou-41879.herokuapp.com/).
 
   ### Contribution
   Kai Dong

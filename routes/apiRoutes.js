@@ -26,7 +26,7 @@ module.exports = function(app) {
     app.delete("/api/notes/:id", function (req, res) {
         let uniqueID = req.params.id;
         let newID = 0;
-        data = data.filter(current => {
+        data = data.filter((current) => {
             return current.id != uniqueID;
         });
         for (current of data){
