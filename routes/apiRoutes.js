@@ -24,14 +24,14 @@ module.exports = function(app) {
     
     // Deleting the current data we have
     app.delete("/api/notes/:id", function (req, res) {
-        let uniqueID = req.params.id;
-        let newID = 0;
+        let uniqueId = req.params.id;
+        let newId = 0;
         data = data.filter((current) => {
-            return current.id != uniqueID;
+            return current.id != uniqueId;
         });
-        for (current of data){
-            usedNotes.id = newID.toString();
-            uniqueID++;
+        for (current of data) {
+            current.id = newId.toString();
+            newId++;
         }
         fs.writeFileSync("./db/db.json", JSON.stringify(data));
         res.json(data);
