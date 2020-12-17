@@ -17,7 +17,7 @@
 
   ### Demo
 ![Image](./assets/images/Note_Taker.gif "Profile Generator Demo")<br />
- [Note Taker Live Link](https://kaidong-chr.github.io/My_Portfolio/)
+ [Note Taker Live Link](heroku_link_here/)
 
 ![Image](https://img.shields.io/badge/Languages-JavaScript-yellow)
 
@@ -28,7 +28,7 @@
   npm install of express npm package is required.
 
   ### Usage
-  Install npm dependencies, then run <i>server.js</i> in the terminal, then visit the localhost:port for the local version of the site. Otherwise visit the [Note Taker Live Link](https://kaidong-chr.github.io/My_Portfolio/).
+  Install npm dependencies, then run <i>server.js</i> in the terminal, then visit the localhost:port for the local version of the site. Otherwise visit the [Note Taker Live Link](heroku_link_here/).
 
   ### Contribution
   Kai Dong
