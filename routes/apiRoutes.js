@@ -10,21 +10,27 @@ module.exports = function(app) {
         res.json(data);
     });
 
-    // app.get("/api/notes:id", function (req, res) {
-    //     res.json(data);
-    // });
-
     app.post("/api/notes", function(req, res) {
         let notes = req.body;
-        notes.id = data.length.toString();
+        notes.id = (data.length).toString();
         data.push(notes);
-        fs.writeFileSync("./db/db.json",JSON.stringify(data), function (err) {
+        fs.writeFileSync("./db/db.json", JSON.stringify(data), function (err) {
             if (err) throw err;
         });
         res.json(data);
     });
-
-    // app.delete("/api/notes:id", function (req, res) {
-
-    // });
+    
+    app.delete("/api/notes/:id", function (req, res) {
+        let uniqueID = req.params.id;
+        let newID = 0;
+        data = data.filter(usedNotes => {
+            return usedNotes.id != uniqueID;
+        });
+        for (usedNotes of data){
+            usedNotes.id = newID.toString();
+            uniqueID++;
+        }
+        fs.writeFileSync("./db/db.json", JSON.stringify(data));
+        res.json(data);
+    });
 };
