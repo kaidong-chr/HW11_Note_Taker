@@ -3,7 +3,7 @@
 ![badge](https://img.shields.io/badge/license-MIT-blue)<br />
 
   ### Description
-
+  A simple application that takes user inputs and stores or delete their notes. It depends on express and node.js fs module.
   
   ### Table of Contents
   - [Description](#description)
@@ -12,28 +12,23 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#Contribution)
-  - [Tests](#tests)
   - [Questions](#questions)
   - [License](#license)
 
   ### Demo
-![Image](./assets/images/Profile_Generator.gif "Profile Generator Demo")<br />
-[Note Taker Live Link](https://kaidong-chr.github.io/My_Portfolio/)
+![Image](./assets/images/Note_Taker.gif "Profile Generator Demo")<br />
+ [Note Taker Live Link](https://kaidong-chr.github.io/My_Portfolio/)
 
 ![Image](https://img.shields.io/badge/Languages-JavaScript-yellow)
 
   ### Implementation
-  Utilized node.js: inquirer and jest npm packages.
+  Utilize express npm package and fs module.
 
   ### Installation
-  npm install of inquirer and jest npm packages are required.
+  npm install of express npm package is required.
 
   ### Usage
-  Install npm dependencies, then run <i>app.js</i> in the terminal, answer all prompts and check the output directory for <i>team.html</i> file. 
-
-  ### Tests
-  In the terminal run: <i>npm run test</i><br />
-  ![Image](./assets/images/Profile_Generator_Test.jpg "Test Passed")
+  Install npm dependencies, then run <i>server.js</i> in the terminal, then visit the localhost:port for the local version of the site. Otherwise visit the [Note Taker Live Link](https://kaidong-chr.github.io/My_Portfolio/).
 
   ### Contribution
   Kai Dong
