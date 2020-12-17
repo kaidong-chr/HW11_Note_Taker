@@ -4,12 +4,14 @@ const fs = require("fs");
 // Variable for the inputs from db.json
 let data = JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
 
-// Routing
+// API Routing
 module.exports = function(app) {
+    // Retrieving the data from db.json
     app.get("/api/notes", function(req, res) {
         res.json(data);
     });
-
+    
+    // Sending the data the user submits to the server
     app.post("/api/notes", function(req, res) {
         let notes = req.body;
         notes.id = (data.length).toString();
@@ -20,13 +22,14 @@ module.exports = function(app) {
         res.json(data);
     });
     
+    // Deleting the current data we have
     app.delete("/api/notes/:id", function (req, res) {
         let uniqueID = req.params.id;
         let newID = 0;
-        data = data.filter(usedNotes => {
-            return usedNotes.id != uniqueID;
+        data = data.filter(current => {
+            return current.id != uniqueID;
         });
-        for (usedNotes of data){
+        for (current of data){
             usedNotes.id = newID.toString();
             uniqueID++;
         }
